@@ -9,8 +9,14 @@ def cifra_de_cesar(texto, deslocamento):
   pass
 
 def encontrar_maior_palavra(frase):
-  palavras = [p.strip(string.punctuation) for p in frase.split()]
-  return max(palavras, key=len) if palavras else ""
+    try:
+        # garante que é string
+        frase = str(frase)
+        palavras = [p.strip(string.punctuation) for p in frase.split()]
+        return max(palavras, key=len) if palavras else ""
+    except Exception:
+        # se der qualquer erro inesperado
+        return ""
 
 # Exemplos de teste
 print(encontrar_maior_palavra("O rato roeu a roupa do rei de Roma"))  # roupa
