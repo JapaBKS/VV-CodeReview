@@ -15,4 +15,4 @@ def encontrar_maior_palavra(frase):
 # Exemplos de teste
 print(encontrar_maior_palavra("O rato roeu a roupa do rei de Roma"))  # roupa
 print(encontrar_maior_palavra("A jornada de mil milhas começa com um único passo."))  # jornada
-print(encontrar_maior_palavra("Seja forte e corajoso"))  # forte
+print(encontrar_maior_palavra("Seja forte e corajoso"))  # corajoso
